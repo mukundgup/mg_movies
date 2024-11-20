@@ -1,0 +1,111 @@
+/* movie.css */
+
+.card {
+    width: 100%;
+    max-width: 18rem;
+    /* Limit the card width on larger screens */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        /* Full width on smaller screens */
+        max-width: 100%;
+        /* Remove width limit on smaller screens */
+        margin: 1rem auto;
+        /* Center the card with some margin */
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        /* Adjust font size on smaller screens */
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+        /* Adjust text size on smaller screens */
+    }
+
+    .btn-primary {
+        font-size: 0.85rem;
+        /* Adjust button font size */
+        padding: 7px 10px;
+        /* Adjust padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        margin: 0.5rem auto;
+        /* Reduce margin on very small screens */
+        box-shadow: none;
+        /* Simplify shadow effect on small screens */
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    .btn-primary {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
+}
